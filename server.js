@@ -75,8 +75,8 @@ app.use((req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 3001;
+app.listen(PORT,'0.0.0.0', () => {
   console.log(`✅ Server running on port ${PORT}`);
   console.log(`🌐 API URL: http://localhost:${PORT}`);
   console.log(`📁 Upload directory: ${path.join(__dirname, 'uploads')}`);
